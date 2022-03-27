@@ -23,6 +23,9 @@ public class loginPageObject extends setup {
     @FindBy(how= How.XPATH, using = "//input[@type ='submit']")
     public WebElement loginLocator;
 
+    @FindBy(how= How.CSS, using="#error_message > div > h5")
+    public WebElement errorMessage;
+
     public void enterUsername(){
         usernameLocator.sendKeys("TTCztFiu");
 
