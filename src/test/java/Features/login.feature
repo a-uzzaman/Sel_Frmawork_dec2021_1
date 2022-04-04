@@ -36,3 +36,10 @@ Feature: Login feature tests
       |TTCztFiu|123456||
       |   asdfdsf     |  asdfsdaf    |You have entered an incorrect email or student Id.|
 
+  Scenario Outline: Validate error messages
+    Given I am on taltektc website
+    When I click on the create new account
+    And I enter the "<Month>"
+    Examples:
+      |Month|
+      |Feb|

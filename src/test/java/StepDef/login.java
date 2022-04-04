@@ -2,6 +2,7 @@ package StepDef;
 
 import Base.setup;
 import PageObject.loginPageObject;
+import PageObject.signUpPageObject;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,6 +13,7 @@ import org.testng.Assert;
 public class login extends setup {
 
     loginPageObject lp= new loginPageObject(driver);
+
 
     @Given("I am on taltektc website")
     public void iAmOnTaltektcWebsite() {
@@ -66,5 +68,16 @@ public class login extends setup {
     @Then("I should see {string}")
     public void iShouldSee(String errorMessage) {
         Assert.assertEquals(errorMessage,lp.errorMessage.getText());
+    }
+
+
+    @When("I click on the create new account")
+    public void iClickOnTheCreateNewAccount() {
+        lp.CreateAccountButton.click();
+    }
+
+    @Then("It worked")
+    public void itWorked() {
+
     }
 }

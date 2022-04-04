@@ -26,6 +26,9 @@ public class loginPageObject extends setup {
     @FindBy(how= How.CSS, using="#error_message > div > h5")
     public WebElement errorMessage;
 
+    @FindBy(how= How.CSS, using="#wrap > div > div > div > a")
+    public WebElement CreateAccountButton;
+
     public void enterUsername(){
         usernameLocator.sendKeys("TTCztFiu");
 
