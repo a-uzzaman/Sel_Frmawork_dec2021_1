@@ -44,7 +44,7 @@
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>5.1.0</version>
+      <version>5.1.1</version>
     </dependency>
 
     <dependency>
@@ -52,13 +52,34 @@
       <artifactId>javafaker</artifactId>
       <version>1.0.2</version>
     </dependency>
-
+<!--    <dependency>-->
+<!--      <groupId>net.masterthought</groupId>-->
+<!--      <artifactId>cucumber-reporting</artifactId>-->
+<!--      <version>5.7.0</version>-->
+<!--    </dependency>-->
   </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <plugin>
+          <groupId>net.masterthought</groupId>
+          <artifactId>maven-cucumber-reporting</artifactId>
+          <version>5.7.0</version>
+          <executions>
+            <execution>
+              <id>execution</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>generate</goal>
+              </goals>
+              <configuration>
+                <projectName>Sel_Frmawork_dec2021</projectName>
+                <outputDirectory>${project.build.directory}/target/cucumber-report-html</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin><!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
@@ -99,5 +120,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>8</source>
+                  <target>8</target>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>

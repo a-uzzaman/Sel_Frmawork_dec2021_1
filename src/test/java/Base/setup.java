@@ -6,6 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
+
 public class setup {
     public static WebDriver driver;
 
@@ -21,7 +24,9 @@ public class setup {
             WebDriverManager.edgedriver();
             driver = new EdgeDriver();
         }
-
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         return driver;
     }

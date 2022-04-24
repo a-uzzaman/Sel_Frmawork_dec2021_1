@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="16795" started-at="2022-04-24T12:17:48 EDT" finished-at="2022-04-24T12:18:05 EDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@4b553d26]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="16795" started-at="2022-04-24T12:17:48 EDT" finished-at="2022-04-24T12:18:05 EDT">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner@4b553d26]" name="setUpClass" is-config="true" duration-ms="161" started-at="2022-04-24T12:17:48 EDT" finished-at="2022-04-24T12:17:48 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@cf984d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@4b553d26]" name="runScenario" duration-ms="6457" started-at="2022-04-24T12:17:48 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-24T12:17:55 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Use scenario outline to signup to Taltektc"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup for taltektc]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@4b553d26]" name="runScenario" duration-ms="4590" started-at="2022-04-24T12:17:55 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-24T12:17:59 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Use scenario outline to signup to Taltektc"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup for taltektc]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@4b553d26]" name="runScenario" duration-ms="5318" started-at="2022-04-24T12:17:59 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-24T12:18:05 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create new user with fake data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup for taltektc]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@4b553d26]" name="tearDownClass" is-config="true" duration-ms="250" started-at="2022-04-24T12:18:05 EDT" finished-at="2022-04-24T12:18:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

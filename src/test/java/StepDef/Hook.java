@@ -49,7 +49,7 @@ public class Hook extends setup {
         @After
         public void tearDown() throws InterruptedException {
 
-                Thread.sleep(10000);
+                Thread.sleep(1000);
                 driver.quit();
 
 
