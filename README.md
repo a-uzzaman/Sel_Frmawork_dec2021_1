@@ -46,6 +46,6 @@ mvn compile
 mvn verify
 
 # How to run in different browser, env and tags
-mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tags="@smoke"
+mvn verify -Denv=qa -Dbrowser=ch 
 
 
