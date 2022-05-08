@@ -40,6 +40,9 @@ public class Hook extends setup {
                                 existingStudentEmail = "";
                                 existingStudentPass = "";
                                 break;
+                        case "retail":
+                                url = "http://automationpractice.com/index.php";
+                                break;
                 }
 
                 driver.get(url);
