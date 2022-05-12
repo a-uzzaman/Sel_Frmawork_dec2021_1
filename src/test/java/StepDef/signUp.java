@@ -6,7 +6,6 @@ import PageObject.SignupPageObject;
 import PageObject.loginPageObject;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
@@ -16,6 +15,7 @@ public class signUp extends setup {
     Faker fkr=new Faker();
     test_data td=new test_data();
     loginPageObject lp=new loginPageObject(driver);
+
 
 
     @When("I click on Create new account")

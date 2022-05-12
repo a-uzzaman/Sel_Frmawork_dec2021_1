@@ -1,5 +1,7 @@
 package Base;
 
+import com.github.javafaker.Faker;
+
 public class test_data {
     public static String global_studentFirstName;
     public static String global_studentLastName;

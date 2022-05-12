@@ -20,7 +20,7 @@ public class Hook extends setup {
                         driverType = "ch";
                 }
                 if (Strings.isNullOrEmpty(envData)){
-                        envData = "qa";
+                        envData = "retail";
                 }
                 driver = setupBrowser(driverType);
 
