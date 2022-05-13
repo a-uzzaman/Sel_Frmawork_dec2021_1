@@ -20,7 +20,7 @@ public class Hook extends setup {
                         driverType = "ch";
                 }
                 if (Strings.isNullOrEmpty(envData)){
-                        envData = "qa";
+                        envData = "retail";
                 }
                 driver = setupBrowser(driverType);
 
@@ -40,6 +40,9 @@ public class Hook extends setup {
                                 existingStudentEmail = "";
                                 existingStudentPass = "";
                                 break;
+
+                        case "retail":
+                                url = "http://automationpractice.com/index.php";
                 }
 
                 driver.get(url);
