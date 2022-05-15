@@ -41,14 +41,11 @@ public class Hook extends setup {
                                 existingStudentPass = "";
                                 break;
                         case "retail":
-<<<<<<< Updated upstream
+
                                 url = "http://automationpractice.com/index.php";
-=======
-                                url = "http://automationpractice.com/index.php?controller=my-account";
                                 break;
                         case "ohrm":
                                 url = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
->>>>>>> Stashed changes
                                 break;
                 }
 
