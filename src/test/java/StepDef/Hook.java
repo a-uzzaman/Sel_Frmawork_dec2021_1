@@ -20,7 +20,7 @@ public class Hook extends setup {
                         driverType = "ch";
                 }
                 if (Strings.isNullOrEmpty(envData)){
-                        envData = "qa";
+                        envData = "orangehrm";
                 }
                 driver = setupBrowser(driverType);
 
@@ -30,21 +30,15 @@ public class Hook extends setup {
                                 existingStudentEmail = "qaenv@gmail.com";
                                 existingStudentPass = "Te$t1234";
                                 break;
-                        case "stage":
-                                url = "http://stage.taltektc.com";
-                                existingStudentEmail = "stgenv@gmail.com";
-                                existingStudentPass = "$tudenT1234";
-                                break;
                         case "prod":
                                 url = "http://prod.taltektc.com";
                                 existingStudentEmail = "";
                                 existingStudentPass = "";
                                 break;
                         case "retail":
-
                                 url = "http://automationpractice.com/index.php";
                                 break;
-                        case "ohrm":
+                        case "orangehrm":
                                 url = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
                                 break;
                 }
@@ -56,7 +50,7 @@ public class Hook extends setup {
         @After
         public void tearDown() throws InterruptedException {
 
-                Thread.sleep(1000);
+                Thread.sleep(10000);
                 driver.quit();
 
 
