@@ -20,7 +20,7 @@ public class Hook extends setup {
                         driverType = "ch";
                 }
                 if (Strings.isNullOrEmpty(envData)){
-                        envData = "qa";
+                        envData = "ohrm";
                 }
                 driver = setupBrowser(driverType);
 
@@ -43,7 +43,11 @@ public class Hook extends setup {
                         case "retail":
 
                                 url = "http://automationpractice.com/index.php";
+
                                 break;
+
+
+
                         case "ohrm":
                                 url = "https://opensource-demo.orangehrmlive.com/index.php/auth/login";
                                 break;
